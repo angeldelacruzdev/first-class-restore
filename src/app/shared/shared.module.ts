@@ -4,10 +4,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, TopHeaderComponent],
-  exports: [NavbarComponent, FooterComponent, TopHeaderComponent],
+  declarations: [
+    NavbarComponent,
+    FooterComponent,
+    TopHeaderComponent,
+    ServicesComponent,
+  ],
+  exports: [
+    NavbarComponent,
+    FooterComponent,
+    TopHeaderComponent,
+    ServicesComponent,
+  ],
   imports: [CommonModule, FontAwesomeModule],
 })
 export class SharedModule {}
