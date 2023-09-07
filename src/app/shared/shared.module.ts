@@ -6,6 +6,7 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
 import { ServiceCardComponent } from './services/components/service-card/service-card.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { ServiceCardComponent } from './services/components/service-card/service
     FooterComponent,
     TopHeaderComponent,
     ServicesComponent,
-    ServiceCardComponent
+    ServiceCardComponent,
   ],
   exports: [
     NavbarComponent,
@@ -21,6 +22,6 @@ import { ServiceCardComponent } from './services/components/service-card/service
     TopHeaderComponent,
     ServicesComponent,
   ],
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule, FontAwesomeModule, RouterModule],
 })
 export class SharedModule {}
