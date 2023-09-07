@@ -5,28 +5,37 @@
         <li
           class="hover:bg-[#ee353b] border-l-2 border-r-2 border-slate-900/20"
         >
-          <a href="#" class="text-white p-4 inline-block">Home</a>
+          <a routerLink="/" class="text-white p-4 inline-block">Home</a>
         </li>
         <li
           class="relative group hover:bg-[#ee353b] border-r-2 border-slate-900/20"
         >
           <a href="#" class="text-white p-4 inline-block">Services</a>
           <ul
-            class="absolute z-10 left-0 hidden mt-0 space-y-2 bg-white text-black group-hover:block w-36 shadow-lg"
+            class="absolute z-10 left-0 hidden mt-0 space-y-2 bg-white text-black group-hover:block w-[170px] shadow-lg"
           >
             <li class="hover:bg-[#ee353b] hover:text-white">
-              <a href="#" class="block px-4 py-2">Water Damge</a>
+              <a routerLink="services/water-damage" class="block px-4 py-2">Water Damge</a>
             </li>
             <li class="hover:bg-[#ee353b] hover:text-white">
-              <a href="#" class="block px-4 py-2">Water Damge</a>
+              <a routerLink="services/fire-restoration" class="block px-4 py-2">Fire Restoration</a>
             </li>
             <li class="hover:bg-[#ee353b] hover:text-white">
-              <a href="#" class="block px-4 py-2">Water Damge</a>
+              <a routerLink="services/industrial-cleanup" class="block px-4 py-2">Industrial Cleanup</a>
+            </li>
+            <li class="hover:bg-[#ee353b] hover:text-white">
+              <a routerLink="services/odor-control" class="block px-4 py-2">Odor Control</a>
+            </li>
+            <li class="hover:bg-[#ee353b] hover:text-white">
+              <a routerLink="services/mold-remediation" class="block px-4 py-2">Mold Remediation</a>
+            </li>
+            <li class="hover:bg-[#ee353b] hover:text-white">
+              <a routerLink="services/bio-recovery" class="block px-4 py-2">Bio-Recovery</a>
             </li>
           </ul>
         </li>
-        <li class="hover:bg-[#ee353b]  border-r-2 border-slate-900/20">
-          <a href="#" class="text-white p-4 inline-block">Contact</a>
+        <li class="hover:bg-[#ee353b] border-r-2 border-slate-900/20">
+          <a routerLink="contact" class="text-white p-4 inline-block">Contact</a>
         </li>
       </ul>
     </nav>
