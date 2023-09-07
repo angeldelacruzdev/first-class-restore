@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
+import { ServiceCardComponent } from './services/components/service-card/service-card.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ServicesComponent } from './services/services.component';
     FooterComponent,
     TopHeaderComponent,
     ServicesComponent,
+    ServiceCardComponent
   ],
   exports: [
     NavbarComponent,
