@@ -1,56 +1,145 @@
-<div class="w-full bg-color py-24">
-  <div class="flex justify-center">
-    <h1 class="text-xl md:text-4xl font-bold">Services</h1>
-  </div>
-  <div class="container mx-auto">
-    <div class="grid grid-cols-12 gap-18 lg:gap-32 mt-16">
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Water Damage"
-        paragraph="Rapid response to minimize water's impact, restoring properties and
-      peace of mind with efficient, professional care."
-        link="water-damage"
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+<div class="bg-color px-12 py-12 md:py-24">
+  <h1 class="flex justify-center text-xl md:text-2xl lg:text-4xl font-bold">
+    Services
+  </h1>
+  <div class="grid grid-cols-12 gap-4 md:gap-8 lg:gap-12 mt-8 md:mt-16">
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faDroplet"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Water Damage
+      </h2>
+      <p class="text-md lg:text-lg">
+        Rapid response to minimize water's impact, restoring properties and
+        peace of mind with efficient, professional care.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/water-damage"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
+    </div>
 
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Fire Restoration"
-        paragraph="Expert restoration services rebuild fire-damaged spaces, ensuring safety, comfort, and a fresh start after disasters."
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faFire"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Fire Restoration
+      </h2>
+      <p class="text-md lg:text-lg">
+        Expert restoration services rebuild fire-damaged spaces, ensuring
+        safety, comfort, and a fresh start after disasters.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/fire-restoration"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
+    </div>
 
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Industrial Cleanup"
-        paragraph="Maintain safe, compliant, and efficient workspaces with our industrial-grade cleanup solutions, ensuring a spotless and secure environment."
-        link="water-damage"
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faBuilding"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Industrial Cleanup
+      </h2>
+      <p class="text-md lg:text-lg">
+        Maintain safe, compliant, and efficient workspaces with our
+        industrial-grade cleanup solutions, ensuring a spotless and secure
+        environment.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/industrial-cleanup"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
+    </div>
 
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Odor Control"
-        paragraph="Eliminate stubborn odors and enhance indoor air quality, creating pleasant, breathable environments with our effective solutions."
-        link="water-damage"
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faPoop"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Odor Control
+      </h2>
+      <p class="text-md lg:text-lg">
+        Eliminate stubborn odors and enhance indoor air quality, creating
+        pleasant, breathable environments with our effective solutions.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/odor-control"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
+    </div>
 
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Mold Remediation"
-        paragraph="Protect health and property, rely on our specialized mold remediation for a mold-free, safe environment."
-        link="water-damage"
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faBacterium"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Mold Remediation
+      </h2>
+      <p class="text-md lg:text-lg">
+        Protect health and property, rely on our specialized mold remediation
+        for a mold-free, safe environment.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/mold-remediation"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
+    </div>
 
-      <app-service-card
-        (icon)="(faDroplet)"
-        title="Bio-Recovery"
-        paragraph="Experts in safe, thorough biohazard cleanup, ensuring health and safety in hazardous situations."
-        link="water-damage"
-        class="col-span-12 md:col-span-6 lg:col-span-4"
-      ></app-service-card>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 my-4 md:my-0 p-8 bg-white rounded-lg text-center"
+    >
+      <fa-icon
+        class="text-[#F58C77] text-2xl md:text-3xl lg:text-5xl"
+        [icon]="faRadiation"
+      ></fa-icon>
+      <h2 class="text-lg md:text-xl lg:text-2xl font-bold pt-2 md:pt-4 pb-2">
+        Bio-Recovery
+      </h2>
+      <p class="text-md lg:text-lg">
+        Experts in safe, thorough biohazard cleanup, ensuring health and safety
+        in hazardous situations.
+      </p>
+      <div class="text-center pt-4 md:pt-6">
+        <a
+          href="/services/bio-recovery"
+          class="w-10/12 rounded-md inline-block p-2 bg-[#F58C77] hover:bg-[#EE353B] text-white font-semibold rounded-sm mt-4"
+          >Read More</a
+        >
+      </div>
     </div>
   </div>
 </div>
