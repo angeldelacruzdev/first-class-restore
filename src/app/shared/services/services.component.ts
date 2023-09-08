@@ -4,6 +4,9 @@ import {
   faFire,
   faGlassWater,
   faDroplet,
+  faRadiation,
+  faPoop,
+  faBacterium
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,6 +17,8 @@ import {
 export class ServicesComponent {
   faBuilding = faBuilding;
   faFire = faFire;
-  faGlassWater = faGlassWater;
   faDroplet = faDroplet;
+  faRadiation = faRadiation;
+  faPoop = faPoop;
+  faBacterium = faBacterium;
 }

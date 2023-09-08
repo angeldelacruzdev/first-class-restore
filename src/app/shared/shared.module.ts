@@ -5,7 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
-import { ServiceCardComponent } from './services/components/service-card/service-card.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     TopHeaderComponent,
     ServicesComponent,
-    ServiceCardComponent,
   ],
   exports: [
     NavbarComponent,
