@@ -15,18 +15,25 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.meta.addTag({ name: "title", content: "First Class Restore" });
+    this.meta.addTag({ name: "robots", content: "follow" });
+    this.meta.addTag({ name: "author", content: "John F Tavarez" });
     this.title.setTitle("First Class Restore")
 
     // Establecer meta etiquetas
-    this.meta.updateTag({ name: 'description', content: ' This company is dedicated to delivering top-notch services, as reflected in our name. We were founded by Kilian Rodriguez and John Tavarez.' });
+    this.meta.updateTag({ name: 'description', content: 'This company is dedicated to delivering top-notch services, as reflected in our name. We were founded by Kilian Rodriguez and John Tavarez.' });
 
     // Establecer Open Graph / Facebook meta etiquetas
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:url', content: 'https://www.firstclassrestore.com/' });
+    this.meta.updateTag({ property: 'og:description', content: 'This company is dedicated to delivering top-notch services, as reflected in our name. We were founded by Kilian Rodriguez and John Tavarez.' });
+    this.meta.updateTag({ property: 'og:image', content: 'assets/summary_large_image.png' });
     // ... otros tags
 
     // Establecer Twitter meta etiquetas
-    this.meta.updateTag({ property: 'twitter:card', content: '/assets/summary_large_image.png' });
+    this.meta.updateTag({ property: 'twitter:card', content: 'assets/summary_large_image.png' });
+    this.meta.updateTag({ property: 'twitter:title', content: 'First Class Restore' });
+    this.meta.updateTag({ property: 'twitter:url', content: 'https://www.firstclassrestore.com/' });
+    this.meta.updateTag({ property: 'twitter:description', content: 'This company is dedicated to delivering top-notch services, as reflected in our name. We were founded by Kilian Rodriguez and John Tavarez.' });
     // ... otros tags
 
   }
