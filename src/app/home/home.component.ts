@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
     // ... otros tags
 
     // Establecer Twitter meta etiquetas
-    this.meta.updateTag({ property: 'twitter:card', content: '../../assets/summary_large_image.png' });
+    this.meta.updateTag({ property: 'twitter:card', content: '/assets/summary_large_image.png' });
     // ... otros tags
 
   }
