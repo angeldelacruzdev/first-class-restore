@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
   constructor(private meta: Meta, private title: Title) { }
 
   ngOnInit(): void {
-    this.meta.addTag({ name: "title", content: "First Class Restore" });
+    this.meta.addTag({ name: "title", content: "First Class Restore - When Every Second Counts, We're There for You." });
     this.meta.addTag({ name: "robots", content: "follow" });
     this.meta.addTag({ name: "author", content: "John F Tavarez" });
     this.meta.addTag({ name: "keywords", content: "  Water Damage,  Fire Restoration,  Industrial Cleanup, Odor Control,  Mold Remediation,   Bio-Recovery" });
-    this.title.setTitle("First Class Restore")
+    this.title.setTitle("First Class Restore - When Every Second Counts, We're There for You")
 
     this.meta.updateTag({ name: 'description', content: 'This company is dedicated to delivering top-notch services, as reflected in our name. We were founded by Kilian Rodriguez and John Tavarez.' });
 
