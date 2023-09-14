@@ -6,6 +6,7 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
 import { RouterModule } from '@angular/router';
+import { CertifiedComponent } from './certified/certified.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,14 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     TopHeaderComponent,
     ServicesComponent,
+    CertifiedComponent,
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
     TopHeaderComponent,
     ServicesComponent,
+    CertifiedComponent
   ],
   imports: [CommonModule, FontAwesomeModule, RouterModule],
 })
